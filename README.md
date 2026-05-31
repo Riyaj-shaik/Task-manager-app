@@ -8,6 +8,8 @@ Built as an intern assignment.
 
 - **Frontend:** orchestratask.netlify.app
 - **Backend:**  https://task-manager-app-ithl.onrender.com
+- Please note: The backend is hosted on Render's free tier and may take up to 50 seconds to respond after a period of inactivity. If a request seems slow, please wait while the server wakes up and processes your request.
+
 
 ## Stack
 
