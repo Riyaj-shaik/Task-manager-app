@@ -6,8 +6,8 @@ Built as an intern assignment.
 
 ## Live links
 
-- **Frontend:** _add your Netlify URL here_
-- **Backend:**  _add your Render URL here_
+- **Frontend:** orchestratask.netlify.app
+- **Backend:**  https://task-manager-app-ithl.onrender.com
 
 ## Stack
 
