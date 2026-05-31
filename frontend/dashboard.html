@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Manager — Board</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>My Tasks</h1>
+      <div class="topbar-right">
+        <span id="user-email" class="muted"></span>
+        <button id="logout-btn" class="btn ghost">Logout</button>
+      </div>
+    </header>
+
+    <main class="board-wrapper">
+      <section class="new-task">
+        <input id="new-title" type="text" placeholder="Task title" />
+        <input id="new-description" type="text" placeholder="Description (optional)" />
+        <select id="new-stage">
+          <option value="todo">Todo</option>
+          <option value="in_progress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+        <button id="add-btn" class="btn primary">Add</button>
+      </section>
+
+      <p id="board-error" class="error" role="alert"></p>
+      <p id="board-loading" class="muted">Loading...</p>
+
+      <section class="board">
+        <div class="column" data-stage="todo">
+          <header>
+            <h2>Todo</h2>
+            <span class="count" data-count>0</span>
+          </header>
+          <ul class="task-list"></ul>
+        </div>
+        <div class="column" data-stage="in_progress">
+          <header>
+            <h2>In Progress</h2>
+            <span class="count" data-count>0</span>
+          </header>
+          <ul class="task-list"></ul>
+        </div>
+        <div class="column" data-stage="done">
+          <header>
+            <h2>Done</h2>
+            <span class="count" data-count>0</span>
+          </header>
+          <ul class="task-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/tasks.js"></script>
+  </body>
+</html>

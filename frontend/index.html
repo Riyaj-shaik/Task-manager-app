@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Manager — Sign in</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth-card">
+      <h1>Task Manager</h1>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="login">Login</button>
+        <button class="tab" data-tab="register">Register</button>
+      </div>
+
+      <form id="auth-form" class="form" autocomplete="on">
+        <label>
+          <span>Email</span>
+          <input
+            type="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="you@example.com"
+          />
+        </label>
+        <label>
+          <span>Password</span>
+          <input
+            type="password"
+            name="password"
+            required
+            minlength="6"
+            autocomplete="current-password"
+            placeholder="At least 6 characters"
+          />
+        </label>
+
+        <p id="auth-error" class="error" role="alert"></p>
+        <button id="auth-submit" type="submit" class="btn primary">Login</button>
+      </form>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
